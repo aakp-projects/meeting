@@ -1,12 +1,15 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import MeetingTracker from '@/components/MeetingTracker';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-white p-4">
+      <div className="w-full max-w-md">
+        <MeetingTracker />
       </div>
+      <footer className="mt-16 text-sm text-muted-foreground text-center">
+        <p>Meeting costs are calculated at the rate of 1000 NOK per participant per hour</p>
+      </footer>
     </div>
   );
 };
