@@ -30,7 +30,6 @@ const ParticipantInput: React.FC<ParticipantInputProps> = ({
         min="1"
         value={participants}
         onChange={handleChange}
-        disabled={isRunning}
         className="text-lg"
       />
       <p className="text-xs text-muted-foreground">
