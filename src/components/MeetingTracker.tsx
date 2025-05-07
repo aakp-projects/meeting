@@ -18,11 +18,9 @@ const MeetingTracker: React.FC = () => {
     
     if (isRunning) {
       timer = window.setInterval(() => {
-        setElapsedTime(prevTime => {
-          const newTime = prevTime + 1;
-          setCost(calculateCost(participants, newTime));
-          return newTime;
-        });
+        setElapsedTime(prevTime => prevTime + 1);
+        setCost(prevCost => prevCost + calculateCost(participants, 1));
+
       }, 1000);
     }
     
